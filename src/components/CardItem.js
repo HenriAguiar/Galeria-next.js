@@ -1,5 +1,5 @@
 import { Card, Badge } from "flowbite-react"; // Import Flowbite components
-
+import Link from "next/link"; // Import Link from Next.js
 const badgeTheme = {
   root: {
     color: {
@@ -19,10 +19,11 @@ const cardTheme = {
 
 export default function CardItem({ item }) {
   return (
+    <Link href={`/item/${item.id}`} className="no-underline">
     <Card
       key={item.id}
       theme={cardTheme}
-      className="w-[20rem] h-[25rem] border-none bg-[#292929]"
+      className="w-[20rem] h-[25rem] border-none bg-[#292929] transform transition duration-200 ease-in-out hover:scale-105 hover:bg-gray-800"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={item.imagemCard}
     >
@@ -30,7 +31,7 @@ export default function CardItem({ item }) {
         <h5 className="truncate-title text-2xl font-extrabold tracking-tight text-[#EFE1CE]">
           {item.titulo}
         </h5>
-        <p className="truncate-title font-medium text-[#EFE1CE]">
+        <p className="truncate-descricao font-medium text-[#EFE1CE]">
           {item.descricao}
         </p>
       </div>
@@ -47,5 +48,6 @@ export default function CardItem({ item }) {
         </div>
       </div>
     </Card>
+    </Link>
   );
 }
