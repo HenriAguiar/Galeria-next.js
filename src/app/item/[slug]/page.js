@@ -1,13 +1,13 @@
+import NavbarGlobal from "@/components/NavBar";
+import CapaItem from "@/components/CapaItem";
 export default function Item() {
   return (
     <>
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white">
-        <h1 className="text-7xl font-black text-[#efe1ce] drop-shadow-2xl">
-          POKEDEX
-        </h1>
-        <p className="font-semibold text-4xl mt-4 text-[#efe1ce] drop-shadow-2xl">
-          Seu portal para monstros japoneses
-        </p>
+      <div className="relative h-[100vh] w-full overflow-hidden drop-shadow-2xl">
+        <div className="absolute top-0 left-0 right-0 z-30">
+          <NavbarGlobal />
+        </div>
+        <CapaItem />
       </div>
     </>
   );
