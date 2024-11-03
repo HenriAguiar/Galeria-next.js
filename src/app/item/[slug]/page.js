@@ -12,7 +12,7 @@ export default async function Item({params}) {
         <div className="absolute top-0 left-0 right-0 z-30">
           <NavbarGlobal />
         </div>
-        <CapaItem titulo={item.titulo} descricao={item.descricao} categoria={item.categoria} />
+        <CapaItem titulo={item.titulo} descricao={item.descricao} categoria={item.categoria} imagem={item.imagemCapa}/>
       </div>
       <DescricaoItem descricao={item.descricao}/>
 

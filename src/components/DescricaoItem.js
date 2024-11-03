@@ -9,9 +9,9 @@ export default function DescricaoItem({descricao}) {
                     SOBRE
                 </div>
             </Card>
-            <div href="#" class="max-w-[100rem] block p-6 bg-black border border-gray-700 rounded-lg">
+            <div  className="max-w-[100rem] block p-6 bg-black border border-gray-700 rounded-lg">
 
-                <p class="font-normal text-gray-700 dark:text-gray-400">{descricao}</p>
+                <p className="font-normal text-gray-700 dark:text-gray-400">{descricao}</p>
             </div>
         </div>
     )

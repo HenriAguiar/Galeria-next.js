@@ -7,17 +7,16 @@ const badgeTheme = {
         },
     },
 };
-export default function CapaItem({titulo, descricao, categoria}) {
+export default function CapaItem({ titulo, descricao, categoria, imagem }) {
     console.log(titulo)
     return (
         <div className="relative h-full w-full drop-shadow-2xl" >
-            <Image
-                src="/images/imagemTeste.png"
-                layout="fill"
-                objectFit="cover"
+            <img
+                src={imagem}
                 alt="Background"
-                className="z-0"
+                className="absolute inset-0 w-full h-full object-cover z-0"
             />
+
             <div className="bg-gradient-to-r from-[rgba(30,30,30,0.11)] to-[rgba(30,30,30,0.73)]  absolute inset-0 " style={{
                 background: 'linear-gradient(270deg, rgba(30, 30, 30, 0.11) 43.5%, rgba(30, 30, 30, 0.73) 95%)'
             }}></div>
