@@ -1,13 +1,13 @@
 import CardItem from "./CardItem";
 import { getAllItems } from "@/libs/services/item-service";
-import { Button, Card } from "flowbite-react";
+import { Card } from "flowbite-react";
 export default async function ListaCards() {
     const items = await getAllItems();
   return (
 <div className=" bg-[#1E1E1E]">
       <div className=" container flex-col mx-auto flex justify-center align-middle items-center gap-10 p-10">
-        <Card className="h-[4rem] border-none bg-[#7E2429] text-2xl font-bold text-[#EFE1CE] drop-shadow-2xl xs:w-4/5 md:w-2/5">
-          <div className="flex justify-center align-middle items-center xs:text-center md:text-justify">
+        <Card className="h-[4rem] w-[25vw] max-w-[40rem] border-none bg-[#7E2429] text-2xl font-bold text-[#EFE1CE] drop-shadow-2xl">
+          <div className="p-[80px] flex justify-center align-middle items-center xs:text-center md:text-justify">
             GALERIA
           </div>
         </Card>

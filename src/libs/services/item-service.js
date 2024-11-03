@@ -23,7 +23,6 @@ async function createItem(data) {
 async function getAllItems() {
   try {
     const items = await prisma.item.findMany();
-    console.log(items)
     return items;
   } catch (error) {
     console.error('Erro ao buscar itens:', error);
@@ -37,6 +36,7 @@ async function getItemById(id) {
     const item = await prisma.item.findUnique({
       where: { id: Number(id) },
     });
+    console.log(item)
     return item;
   } catch (error) {
     console.error('Erro ao buscar item por ID:', error);

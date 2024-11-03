@@ -28,10 +28,10 @@ export default function CardItem({ item }) {
       imgSrc={item.imagemCard}
     >
       <div className="flex flex-col items-start gap-[7px]">
-        <h5 className="truncate-title text-2xl font-extrabold tracking-tight text-[#EFE1CE]">
+        <h5 className="text-start truncate-titulo text-2xl font-extrabold tracking-tight text-[#EFE1CE]">
           {item.titulo}
         </h5>
-        <p className="truncate-descricao font-medium text-[#EFE1CE]">
+        <p className="text-start truncate-descricao font-medium text-[#EFE1CE]">
           {item.descricao}
         </p>
       </div>
