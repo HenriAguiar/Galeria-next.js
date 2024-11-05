@@ -1,5 +1,4 @@
 import CardItem from "./CardItem";
-import { getAllItems } from "@/libs/services/item-service";
 import { Card } from "flowbite-react";
 import items from "@/items";
 export default async function ListaCards() {

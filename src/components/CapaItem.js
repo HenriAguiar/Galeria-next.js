@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Badge } from "flowbite-react"; // Import Flowbite components
 const badgeTheme = {
     root: {
