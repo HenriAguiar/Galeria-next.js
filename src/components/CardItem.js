@@ -3,13 +3,13 @@ import Link from "next/link"; // Import Link from Next.js
 const badgeTheme = {
   root: {
     color: {
-      info: "bg-[#EFE1CE] text-[#292929] font-semibold group-hover:bg-cyan-200 dark:bg-cyan-200 dark:text-cyan-800 dark:group-hover:bg-cyan-300",
+      info: "bg-[#362f78] text-[#b4c6fc] font-semibold group-hover:bg-cyan-200",
     },
   },
 };
 const cardTheme = {
   root: {
-    children: "flex h-full flex-col justify-center gap-[7px] p-4",
+    children: " flex h-full flex-col justify-center gap-[7px] p-4",
     href: "hover:bg-gray-100 dark:hover:bg-gray-700",
   },
   img: {
@@ -41,7 +41,6 @@ export default function CardItem({ item }) {
             className="px-3 rounded-lg"
             theme={badgeTheme}
             size="md"
-            color="info"
           >
             {item.categoria}
           </Badge>

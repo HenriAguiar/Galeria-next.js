@@ -14,7 +14,9 @@ export default async function Item({params}) {
         </div>
         <CapaItem titulo={item.titulo} descricao={item.descricao} categoria={item.categoria} imagem={item.imagemCapa}/>
       </div>
-      <DescricaoItem descricao={item.descricao}/>
+      <div className="bg-[#1E1E1E]">
+        <DescricaoItem descricao={item.descricao}/> 
+      </div>
 
     </>
   );

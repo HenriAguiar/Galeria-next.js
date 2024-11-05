@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Badge } from "flowbite-react"; // Import Flowbite components
 const badgeTheme = {
     root: {
-        color: {
-            info: "bg-[#EFE1CE] text-[#292929] font-semibold group-hover:bg-cyan-200 dark:bg-cyan-200 dark:text-cyan-800 dark:group-hover:bg-cyan-300",
-        },
+      color: {
+        info: "bg-[#362f78] text-[#b4c6fc] font-semibold group-hover:bg-cyan-200",
+      },
     },
-};
+  };
 export default function CapaItem({ titulo, descricao, categoria, imagem }) {
     console.log(titulo)
     return (
