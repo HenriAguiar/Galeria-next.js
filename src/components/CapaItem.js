@@ -7,12 +7,13 @@ const badgeTheme = {
       },
     },
   };
-export default function CapaItem({ titulo, descricao, categoria, imagem }) {
+  //o exercicio é 
+export default function CapaItem({ parametro1, parametro2, parametro3, parametro4 }) {
     console.log(titulo)
     return (
         <div className="relative h-full w-full drop-shadow-2xl" >
             <img
-                src={imagem}
+                src={parametro}
                 alt="Background"
                 className="absolute inset-0 w-full h-full object-cover z-0"
             />
@@ -22,15 +23,15 @@ export default function CapaItem({ titulo, descricao, categoria, imagem }) {
             }}></div>
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white grid grid-cols-1 lg:grid-cols-2 ">
                 <div className="flex flex-col items-start gap-8 p-10">
-                    <h1 className="text-start truncate-titulo font-black text-[#efe1ce] drop-shadow-2xl break-words text-4xl md:text-6xl lg:text-7xl xl:text-8xl max-w-[100%]">{titulo}</h1>
-                    <p className="text-start truncate-descricao font-semibold mt-4 text-[#efe1ce] drop-shadow-2xl break-words text-lg md:text-2xl lg:text-3xl xl:text-4xl max-w-[100%]">{descricao}</p>
+                    <h1 className="text-start truncate-titulo font-black text-[#efe1ce] drop-shadow-2xl break-words text-4xl md:text-6xl lg:text-7xl xl:text-8xl max-w-[100%]">{parametro}</h1>
+                    <p className="text-start truncate-descricao font-semibold mt-4 text-[#efe1ce] drop-shadow-2xl break-words text-lg md:text-2xl lg:text-3xl xl:text-4xl max-w-[100%]">{parametro}</p>
                     <Badge
                         className="px-3 rounded-lg"
                         theme={badgeTheme}
                         size="md"
                         color="info"
                     >
-                        {categoria}
+                        {parametro}
                     </Badge></div>
             </div>
         </div>

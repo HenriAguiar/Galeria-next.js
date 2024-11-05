@@ -19,20 +19,20 @@ const cardTheme = {
 
 export default function CardItem({ item }) {
   return (
-    <Link href={`/item/${item.id}`} className="no-underline">
+    <Link href={`sua rota`} className="no-underline">
     <Card
-      key={item.id}
+      key={item.parametro}
       theme={cardTheme}
       className="w-[20rem] h-[25rem] border-none bg-[#292929] transform transition duration-200 ease-in-out hover:scale-105 hover:bg-gray-800"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc={item.imagemCard}
+      imgSrc={item.parametro}
     >
       <div className="flex flex-col items-start gap-[7px]">
         <h5 className="text-start truncate-titulo text-2xl font-extrabold tracking-tight text-[#EFE1CE]">
-          {item.titulo}
+          {item.parametro}
         </h5>
         <p className="text-start truncate-descricao font-medium text-[#EFE1CE]">
-          {item.descricao}
+          {item.parametro}
         </p>
       </div>
       <div className="flex flex-1 self-stretch">
@@ -42,7 +42,7 @@ export default function CardItem({ item }) {
             theme={badgeTheme}
             size="md"
           >
-            {item.categoria}
+            {item.parametro}
           </Badge>
         </div>
       </div>
