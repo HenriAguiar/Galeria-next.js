@@ -13,10 +13,10 @@ export default function CapaHome() {
             <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
                 <h1 className="font-black text-[#efe1ce] drop-shadow-2xl break-words text-4xl md:text-6xl lg:text-7xl xl:text-8xl max-w-[90%]">
-                    POKEDEXPOKEDEX
+                    TITULO
                 </h1>
                 <p className="font-semibold mt-4 text-[#efe1ce] drop-shadow-2xl break-words text-lg md:text-2xl lg:text-3xl xl:text-4xl max-w-[90%]">
-                    Seu portal para monstros japoneses
+                    subtitulo
                 </p>
             </div>
         </div>

@@ -9,7 +9,6 @@ const badgeTheme = {
   };
   //o exercicio é 
 export default function CapaItem({ parametro1, parametro2, parametro3, parametro4 }) {
-    console.log(titulo)
     return (
         <div className="relative h-full w-full drop-shadow-2xl" >
             <img
