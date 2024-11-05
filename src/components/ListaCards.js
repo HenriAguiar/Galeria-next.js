@@ -3,6 +3,7 @@ import { getAllItems } from "@/libs/services/item-service";
 import { Card } from "flowbite-react";
 export default async function ListaCards() {
     const items = await getAllItems();
+    console.log("Items retornados na lista de cards:", items);
   return (
 <div className=" bg-[#1E1E1E]">
       <div className=" container flex-col mx-auto flex justify-center align-middle items-center gap-10 p-10">

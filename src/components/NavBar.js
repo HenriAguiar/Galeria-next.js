@@ -1,5 +1,3 @@
-"use client";
-
 import { Navbar } from "flowbite-react";
 
 export default function NavbarGlobal() {
@@ -12,12 +10,12 @@ export default function NavbarGlobal() {
     >
       <Navbar.Brand  href="/">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
+          src="sua imagem"
           className="mr-3 h-6 sm:h-9"
           alt="Flowbite React Logo"
         />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Galeria
+          GALERIA
         </span>
       </Navbar.Brand>
     </Navbar>

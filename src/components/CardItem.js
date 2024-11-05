@@ -1,5 +1,7 @@
 import { Card, Badge } from "flowbite-react"; // Import Flowbite components
 import Link from "next/link"; // Import Link from Next.js
+
+// Temas personalizados para o Badge e o Card
 const badgeTheme = {
   root: {
     color: {
@@ -17,22 +19,27 @@ const cardTheme = {
   },
 };
 
+// Componente funcional Next.js chamado 'CardItem' que recebe um item como parâmetro
+// Utiliza o componente Card do Flowbite para exibir um item com título, descrição e Badge
+
+//Para que o componente funcione, voce deve substituir os parametros de acordo com o que deseja exibir
 export default function CardItem({ item }) {
+  
   return (
-    <Link href={`/item/${item.id}`} className="no-underline">
+    <Link href={`rota da pagina`} className="no-underline">
     <Card
-      key={item.id}
+      key={item.parametro}
       theme={cardTheme}
       className="w-[20rem] h-[25rem] border-none bg-[#292929] transform transition duration-200 ease-in-out hover:scale-105 hover:bg-gray-800"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc={item.imagemCard}
+      imgSrc={item.parametro}
     >
       <div className="flex flex-col items-start gap-[7px]">
         <h5 className="text-start truncate-titulo text-2xl font-extrabold tracking-tight text-[#EFE1CE]">
-          {item.titulo}
+          {item.parametro}
         </h5>
         <p className="text-start truncate-descricao font-medium text-[#EFE1CE]">
-          {item.descricao}
+          {item.parametro}
         </p>
       </div>
       <div className="flex flex-1 self-stretch">
@@ -43,7 +50,7 @@ export default function CardItem({ item }) {
             size="md"
             color="info"
           >
-            {item.categoria}
+            {item.parametro}
           </Badge>
         </div>
       </div>
@@ -51,3 +58,9 @@ export default function CardItem({ item }) {
     </Link>
   );
 }
+/*
+Explicação dos pontos principais para iniciantes:
+1. Importação de componentes: Estamos utilizando tanto o componente padrão de imagem do Next.js quanto o Badge e Card do Flowbite
+2. Tema do Flowbite: Foi criado um tema personalizado para o Badge e o Card, permitindo customizar suas cores e comportamento.
+3. Componentes reusáveis: Todos os componentes ('CapaItem', 'CapaHome', 'CardItem') são reusáveis e aceitam diferentes parâmetros, o que ajuda a evitar repetição de código e facilita a manutenção.
+*/
