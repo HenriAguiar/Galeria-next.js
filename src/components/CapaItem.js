@@ -9,12 +9,12 @@ const badgeTheme = {
       },
     },
   };
-export default function CapaItem({ titulo, descricao, categoria, imagem }) {
+export default function CapaItem({ parametro, parametro, parametro, parametro }) {
     console.log(titulo)
     return (
         <div className="relative h-full w-full drop-shadow-2xl" >
             <img
-                src={imagem}
+                src={parametro}
                 alt="Background"
                 className="absolute inset-0 w-full h-full object-cover z-0"
             />

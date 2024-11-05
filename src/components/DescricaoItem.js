@@ -14,7 +14,7 @@ export default function DescricaoItem({parametro}) {
             </Card>
             <div  className="bg-[#292929] max-w-[100rem] block p-6 border border-gray-700 rounded-lg">
 
-                <p className="font-semibold text-[#EFE1CE] ">{descricao}</p>
+                <p className="font-semibold text-[#EFE1CE] ">{parametro}</p>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ export default function NavbarGlobal() {
       rounded
       className="h-[3.5rem] mx-auto drop-shadow-2xl bg-none px-2 py-2.5 sm:px-4"
     >
-      <Navbar.Brand  href="/">
+      <Navbar.Brand  href="sua rota">
         <img
           src="sua imagem"
           className="mr-3 h-6 sm:h-9"
