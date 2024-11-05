@@ -5,7 +5,7 @@ export default async function ListaCards() {
     const items = await getAllItems();
     console.log("Items retornados na lista de cards:", items);
   return (
-<div className=" bg-[#1E1E1E]">
+<div className="bg-[#1E1E1E]">
       <div className=" container flex-col mx-auto flex justify-center align-middle items-center gap-10 p-10">
         <Card className="h-[4rem] mx-5 border-none bg-[#7E2429] text-2xl font-bold text-[#EFE1CE] drop-shadow-2xl">
           <div className="p-[80px] flex justify-center align-middle items-center">
@@ -14,7 +14,7 @@ export default async function ListaCards() {
         </Card>
 
         {items.length === 0 ? (
-          <p className=" text-2xl font-extrabold tracking-tight text-[#292929] dark:text-white">
+          <p className=" text-2xl font-extrabold tracking-tight text-[#292929]">
             Nenhum item foi encontrado
           </p>
         ) : (

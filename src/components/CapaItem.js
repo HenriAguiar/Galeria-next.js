@@ -3,24 +3,21 @@ import { Badge } from "flowbite-react";
 
 // Definindo um tema personalizado para o Badge do Flowbite
 const badgeTheme = {
-  root: {
-    color: {
-      info: "bg-[#EFE1CE] text-[#292929] font-semibold group-hover:bg-cyan-200 dark:bg-cyan-200 dark:text-cyan-800 dark:group-hover:bg-cyan-300",
+    root: {
+      color: {
+        info: "bg-[#362f78] text-[#b4c6fc] font-semibold group-hover:bg-cyan-200",
+      },
     },
-  },
-};
-// Componente funcional Next.js chamado 'CapaItem'
-// Ele recebe várias propriedades (parametros) para exibir informações dinâmicas
-
-//Para que o componente funcione, voce deve substituir os parametros de acordo com o que deseja exibir
-export default function CapaItem({ parametro, parametro, parametro, parametro}) {
-  return (
-    <div className="relative h-full w-full drop-shadow-2xl">
-      <img
-        src={parametro}
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      />
+  };
+export default function CapaItem({ titulo, descricao, categoria, imagem }) {
+    console.log(titulo)
+    return (
+        <div className="relative h-full w-full drop-shadow-2xl" >
+            <img
+                src={imagem}
+                alt="Background"
+                className="absolute inset-0 w-full h-full object-cover z-0"
+            />
 
       <div
         className="bg-gradient-to-r from-[rgba(30,30,30,0.11)] to-[rgba(30,30,30,0.73)]  absolute inset-0 "

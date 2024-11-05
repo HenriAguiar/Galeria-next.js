@@ -15,7 +15,9 @@ export default async function Item({params}) {
         </div>
         <CapaItem parametro={item.parametro} parametro={item.parametro} parametro={item.parametro} parametro={item.parametro}/>
       </div>
-      <DescricaoItem parametro={item.parametro}/>
+      <div className="bg-[#1E1E1E]">
+        <DescricaoItem descricao={item.descricao}/> 
+      </div>
 
     </>
   );

@@ -1,23 +1,7 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
-// Cria um novo item
-async function createItem(data) {
-  try {
-    const newItem = await prisma.item.create({
-      data: {
-        titulo: data.titulo,
-        descricao: data.descricao,
-        imagem: data.imagem,
-        categoria: data.categoria,
-      },
-    });
-    return newItem;
-  } catch (error) {
-    console.error('Erro ao criar item:', error);
-    throw error;
-  }
-}
+
 
 // Obtém todos os itens
 async function getAllItems() {
@@ -44,6 +28,23 @@ async function getItemById(id) {
   }
 }
 
+// Cria um novo item
+async function createItem(data) {
+  try {
+    const newItem = await prisma.item.create({
+      data: {
+        titulo: data.titulo,
+        descricao: data.descricao,
+        imagem: data.imagem,
+        categoria: data.categoria,
+      },
+    });
+    return newItem;
+  } catch (error) {
+    console.error('Erro ao criar item:', error);
+    throw error;
+  }
+}
 // Atualiza um item por ID
 async function updateItem(id, data) {
   try {
