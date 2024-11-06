@@ -1,37 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Guia para Iniciantes: Iniciando o Projeto Minicurso FullStack Next.js
 
-## Getting Started
+Este guia irá te ajudar a começar do zero com um projeto em Next.js, utilizando as ferramentas mais comuns. Siga os passos abaixo e logo você terá uma aplicação básica rodando em seu computador!
 
-First, run the development server:
+## Pré-requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Antes de começar, você precisará dos seguintes itens instalados em sua máquina:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Node.js** - Para instalar e gerenciar pacotes JavaScript e rodar o servidor local.
+   - Você pode baixar e instalar o Node.js a partir deste link: [Node.js Download](https://nodejs.org/)
+2. **npm** (Node Package Manager) - Já está incluído quando você instala o Node.js. É necessário para instalar as bibliotecas e dependências do projeto.
+3. **Editor de Código** - Recomendamos o VS Code, que é um editor gratuito, amigável e cheio de funcionalidades úteis.
+   - Baixe o VS Code aqui: [VS Code Download](https://code.visualstudio.com/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Clonando o Projeto Existente
 
-## Learn More
+Caso você queira colaborar em um projeto já existente, siga estes passos para clonar o repositório do Git:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clonar o Repositório**: Utilize o comando abaixo para clonar o repositório do Git:
+   ```sh
+   git clone https://github.com/HenriAguiar/Galeria-next.js.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Entrar na Pasta do Projeto Clonado**: Navegue até a pasta do projeto clonado.
+   ```sh
+   cd Galeria-next.js
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Instalar Dependências**: Instale as dependências do projeto utilizando o npm.
+   ```sh
+   npm install
+   ```
 
-## Deploy on Vercel
+4. **Rodar o Servidor Localmente**: Depois de instalar as dependências, você pode rodar o servidor localmente.
+   ```sh
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Criando o Projeto do Zero
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Galeria-next.js" 
+Agora que você já possui os pré-requisitos instalados, siga estes passos para criar um projeto Next.js do zero:
+
+1. **Atualizar o npm**: Atualize para a versão 10.9.0 do npm usando o seguinte comando:
+   ```sh
+   npm install -g npm@10.9.0
+   ```
+
+2. **Criar uma Aplicação Next.js**: Utilize o comando `npx` para criar uma nova aplicação com Next.js (versão 14.2.16).
+   ```sh
+   npx create-next-app@14.2.16
+   ```
+
+   - Durante o processo, você será solicitado a nomear seu projeto. Pode ser qualquer nome, mas neste exemplo vamos chamá-lo de **my-app**.
+
+3. **Entrar na Pasta do Projeto**: Navegue até a pasta do projeto recém-criado.
+   ```sh
+   cd my-app
+   ```
+
+4. **Rodar o Servidor Localmente**: Use o comando abaixo para iniciar seu servidor de desenvolvimento.
+   ```sh
+   npm run dev
+   ```
+
+   - Após executar o comando, você poderá acessar seu projeto em [http://localhost:3000](http://localhost:3000).
+
+## Dependências do Projeto
+
+### Front-end
+
+Para melhorar a interface do seu projeto, vamos instalar o **Flowbite**, uma biblioteca de componentes que facilita o desenvolvimento visual do seu projeto.
+
+1. **Instalar o Flowbite e o Flowbite React**:
+   ```sh
+   npm i flowbite-react
+   npm i flowbite
+   ```
+
+### Back-end
+
+Para configurar o back-end do seu projeto, vamos adicionar o **Prisma**, um ORM que facilita a interação com o banco de dados.
+
+1. **Instalar o Prisma**:
+   ```sh
+   npm install prisma --save-dev
+   ```
+
+2. **Executar o Prisma**:
+   ```sh
+   npx prisma
+   ```
+
+3. **Inicializar o Prisma**:
+   ```sh
+   npx prisma init
+   ```
+
+## Próximos Passos
+
+Com esses passos iniciais, você já tem um projeto básico em Next.js rodando no seu computador. A partir daqui, você pode explorar a criação de páginas e componentes, conectar APIs, e personalizar sua aplicação de acordo com suas necessidades.
+
+Observe a estrutura de pastas desse repositório e divirta-se codando! Não hesite em pesquisar ou pedir ajuda quando encontrar algum desafio! 🚀
